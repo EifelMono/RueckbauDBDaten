@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------------
+# Dokumentbestand — bleibt ausserhalb von Git
+#
+# "Alle Dokumente" und "Dokumente" umfassen je rund 1,5 GB Hersteller-PDFs,
+# Zeichnungen, Scans und Outlook-Nachrichten. "Import" ist der Eingangsordner
+# und enthaelt nur Material, das noch nicht ausgewertet ist.
+#
+# data.json verweist auf diese Dateien ueber relative Pfade
+# (Konfigurationen[].Dokumente[].Pfad). Nach einem frischen Clone fehlen die
+# Dateien deshalb — der Dokumentbestand muss separat danebengelegt werden.
+# ---------------------------------------------------------------------------
+/Alle Dokumente/
+/Dokumente/
+/Import/
+
+# Sicherungskopien von data.json (data.json.bak, data.json.vor-import.bak, ...)
+*.bak
+
+# macOS
+.DS_Store
